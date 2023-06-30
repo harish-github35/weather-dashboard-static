@@ -1,0 +1,220 @@
+.detail-card-container {
+  max-width: 480px;
+  border-radius: 4rem;
+  /* border: 1px solid #90c; */
+  background: #fff;
+  overflow: hidden;
+  padding: 3rem 5rem;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detail-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-card-icon-container {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--primary-color);
+}
+
+.detail-card-icon-container svg {
+  fill: #fff;
+  vertical-align: middle;
+}
+
+.number-container {
+  /* border: 1px solid #90c; */
+  text-align: center;
+  padding-block: 1rem;
+}
+
+.number-container .value {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.number-container .text {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+/* wind */
+.wind-speed-svg-container {
+  position: relative;
+  /* border: 1px solid #90c; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wind-speed-meter {
+  /* transform: scale(0.6); */
+  /* border: 1px solid #f33; */
+}
+
+.wind-speed-meter path.meter {
+  stroke: var(--primary-color);
+}
+
+.wind-speed-compass {
+  position: absolute;
+}
+
+.wind-speed-compass {
+  top: 25%;
+  left: 50%;
+  transform-origin: 50% 80%;
+  transform: scale(0.7) translate(-50%, -25%) rotate(20deg);
+}
+
+.wind-speed-compass path {
+  fill: var(--primary-color);
+}
+
+.wind-speed-text {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: -3rem;
+  text-align: center;
+  /* border: 1px solid #90c; */
+}
+
+.detail-card-container.wind {
+  position: relative;
+}
+
+.wind-speed-number-svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: red; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  padding: 2rem 0 0 1rem;
+}
+
+.wind-speed-number-svg {
+  /* transform: scale(0.6); */
+  width: 28rem;
+  height: 15rem;
+  /* border: 1px solid #90c; */
+}
+
+/* wind */
+
+/* humidity */
+.hum-svg-container .names {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 3rem;
+  color: var(--font-secondary-main);
+}
+
+.hum-svg-container .names span {
+  font-size: 1.6rem;
+}
+
+.hum-svg-container .progress {
+  transform: scaleY(1.1);
+}
+
+.hum-svg-container .progress path.content {
+  stroke: var(--primary-color);
+}
+
+/* humidity */
+
+/* Precipitation */
+.prec {
+}
+
+.prec-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.prec-number-container .number {
+  font-size: 1.4rem;
+  color: var(--font-secondary-main);
+}
+
+.prec-svg-container svg.progress {
+  transform: scaleY(0.9);
+}
+
+.prec-svg-container svg.progress path.content {
+  /* border: 1px solid #90c; */
+  stroke: var(--primary-color);
+}
+
+/* Precipitation */
+
+/* Uv index */
+.uv-number-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: left;
+  gap: 1rem;
+}
+
+.uv-number-container span {
+  /* border: 1px solid #90c; */
+  font-size: 1.4rem;
+  display: block;
+  color: var(--font-secondary-main);
+}
+
+.uv-svg-container svg.progress path.content {
+  stroke: var(--primary-color);
+}
+
+/* Uv index */
+
+/* Feelslike */
+.feelslike-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feelslike-number-container span {
+  font-size: 1.4rem;
+  color: var(--font-secondary-main);
+}
+
+.feelslike-svg-container svg.progress,
+.chanceofrain-svg-container svg.progress {
+  transform: scaleY(0.8);
+}
+
+.feelslike-svg-container svg.progress path.content,
+.chanceofrain-svg-container svg.progress path.content {
+  stroke: var(--primary-color);
+}
+
+/* Feelslike */
+
+/* Chance of rain */
+.chanceofrain-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chanceofrain-number-container span {
+  font-size: 1.4rem;
+  color: var(--font-secondary-main);
+}
+
+/* Chance of rain */

@@ -1,0 +1,48 @@
+.graph-container {
+  background: #ffffff;
+  border-radius: 3rem;
+  padding: 4rem;
+  margin-bottom: 4rem;
+}
+
+.graph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.graph-header .btn-group {
+  display: flex;
+  gap: 3rem;
+}
+
+.graph-header .btn-group button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.graph-header .btn-group span svg {
+  vertical-align: middle;
+}
+
+.graph {
+  padding-top: 3rem;
+}
+
+.graph .top-axis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.top-axis-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}

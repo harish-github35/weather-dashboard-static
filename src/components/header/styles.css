@@ -1,0 +1,45 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #09c; */
+  margin-bottom: 5rem;
+}
+
+.main-header nav {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  /* border: 1px solid #90c; */
+}
+
+.main-header-text h2 {
+  margin: 0rem;
+}
+
+.menu-icon-container {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.menu-icon-container:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.threedot-icon {
+  fill: var(--font-primary-main);
+  transform: scale(1.2);
+  vertical-align: middle;
+}
+
+.profile-img-container {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.profile-img {
+  object-fit: cover;
+}
