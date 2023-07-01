@@ -10,6 +10,7 @@ import {
   CartesianGrid,
   ResponsiveContainer,
 } from "recharts";
+import { useMediaQuery } from "@mantine/hooks";
 
 const graphData = [
   {
@@ -63,7 +64,10 @@ const graphData = [
 ];
 
 function Graph() {
-  const data: { name: string; d: number }[] = graphData.map((g) => ({
+  const matches = useMediaQuery("(max-width: 550px)");
+  const responsiveGraphData = matches ? graphData.slice(0, 5) : graphData;
+
+  const data: { name: string; d: number }[] = responsiveGraphData.map((g) => ({
     name: g.percentage + "%",
     d: g.percentage,
   }));
@@ -89,7 +93,7 @@ function Graph() {
       </div>
       <div className="graph">
         <div className="top-axis">
-          {graphData.map((g) => (
+          {responsiveGraphData.map((g) => (
             <div className="top-axis-item" key={g.time}>
               <p className="graph-time">{g.time}</p>
               <span className="graph-icon">
