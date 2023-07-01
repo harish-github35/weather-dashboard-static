@@ -99,28 +99,30 @@ function Graph() {
             </div>
           ))}
         </div>
-        <ResponsiveContainer height={120}>
-          <AreaChart
-            data={data}
-            margin={{
-              top: 10,
-              right: 20,
-              left: 20,
-              bottom: 0,
-            }}
-          >
-            <CartesianGrid stroke="#ccc" />
-            <XAxis dataKey="name" dy={10} fontSize="1.3rem" tickMargin={4} />
-            <Area
-              type="linear"
-              dataKey="d"
-              stroke="#5C9CE5"
-              fill="#5C9CE5"
-              fillOpacity="1"
-              strokeWidth={0}
-            />
-          </AreaChart>
-        </ResponsiveContainer>
+        <div className="responsive-graph-container">
+          <ResponsiveContainer>
+            <AreaChart
+              data={data}
+              margin={{
+                top: 10,
+                right: 20,
+                left: 20,
+                bottom: 0,
+              }}
+            >
+              <CartesianGrid stroke="#ccc" />
+              <XAxis dataKey="name" dy={10} fontSize="1.3rem" tickMargin={4} />
+              <Area
+                type="linear"
+                dataKey="d"
+                stroke="#5C9CE5"
+                fill="#5C9CE5"
+                fillOpacity="1"
+                strokeWidth={0}
+              />
+            </AreaChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </div>
   );
