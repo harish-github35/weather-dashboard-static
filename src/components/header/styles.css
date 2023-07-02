@@ -4,7 +4,22 @@
   align-items: center;
   /* border: 1px solid #09c; */
   margin-bottom: 5rem;
+  gap: 3rem;
 }
+
+/* media-queries */
+@media screen and (max-width: 555px) {
+  .main-header {
+    flex-direction: column-reverse;
+    align-items: unset;
+  }
+
+  .main-header nav {
+    align-self: flex-end;
+  }
+}
+
+/* media-queries */
 
 .main-header nav {
   display: flex;
